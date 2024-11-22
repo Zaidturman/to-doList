@@ -1,5 +1,4 @@
-let tasks = JSON.parse(localStorage.getItem("tasks")) || []; // Retrieve existing tasks or start with an empty array
-
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let emptyimage = document.getElementById("empty");
 
 if (tasks.length == 0) {
@@ -61,13 +60,11 @@ function getData(tasks) {
     deleteElement.id = `delete-${index}`;
     card.appendChild(deleteElement);
     deleteElement.addEventListener("click", function () {
-      // إزالة العنصر من الـ DOM
       card.remove();
 
-      // يمكنك أيضًا إزالة العنصر من الـ localStorage إذا كنت تريد حفظ التغييرات
       let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-      tasks.splice(index, 1); // حذف العنصر بناءً على الـ index
-      localStorage.setItem("tasks", JSON.stringify(tasks)); // تخزين المهام مرة أخرى في الـ localStorage
+      tasks.splice(index, 1);
+      localStorage.setItem("tasks", JSON.stringify(tasks));
     });
     card.appendChild(titleElement);
 

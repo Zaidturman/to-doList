@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+            <a href="index.html">
+                <h1>ذكرني</h1>
+            </a>
+            <input type="text" placeholder="بحث" class="search" id="searchInput" oninput="filterTasks()">
+
+
+        </div>
+
+    </header>
+    <div class="container">
+        <a href="add_task.html"><img src="icons/add_63dp_248232_FILL0_wght400_GRAD0_opsz48.svg" alt="add "
+                class="addIcon"></a>
+        <div class="line"></div>
+        <main>
+
+            <div class="taskcard" id="taskcard"></div>
+            <img src="icons/empty.png" alt="" id="empty">
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

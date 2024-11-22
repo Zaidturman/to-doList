@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header">
+            <a href="index.html">
+                <h1>ذكرني</h1>
+            </a>
+        </div>
+
+    </header>
+    <div class="container">
+        <a href="index.html"><img src="icons/arrow_back_ios_63dp_248232_FILL0_wght400_GRAD0_opsz48.svg" alt="back "
+                class="addIcon"></a>
+
+        <div class="line"></div>
+        <div class="card">
+            <div class="inner">
+                <!--  <div>
+                    <label>الاهمية</label>
+                    <select name="important" id="important" class="selection">
+                        <option value="important">مهم </option>
+                        <option value="important">طبيعي </option>
+                        <option value="important">غير مهم </option>
+
+                    </select>
+                </div> -->
+                <div>
+                    <label for="task">المهمة</label>
+                    <input name="task" type="text " id="title" placeholder="اكتب المهمة هنا" required>
+                </div>
+                <div>
+                    <label for="task">الوصف</label>
+                    <textarea name="task" rows="4" id="des" placeholder="اكتب وصف المهمة هنا"></textarea>
+                </div>
+                <button class="btn" onclick="addTask()">
+                    حفظ
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
